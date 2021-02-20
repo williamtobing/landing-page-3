@@ -19,7 +19,9 @@ const Navbar = () => {
     <nav className={nav ? "nav active" : "nav"}>
       <div className="container">
         <h1 className="logo">
-          <a href="/index.html">My Website</a>
+          <a href="/">
+            <span>my</span>Website
+          </a>
         </h1>
         <ul>
           <li>

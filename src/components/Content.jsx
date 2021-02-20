@@ -1,6 +1,9 @@
 const Content = () => {
   return (
     <section className="container content">
+      <h1>
+        <span>my</span>Website Content
+      </h1>
       <h2>Content One</h2>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione

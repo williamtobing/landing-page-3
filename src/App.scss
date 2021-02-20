@@ -2,6 +2,7 @@
 
 :root {
   --primary-bg: #222;
+  --secondary-bg: #f2f2f2;
   --primary-color: #c0392b;
   --content-color: #555;
 }
@@ -15,11 +16,16 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: var(--primary-bg);
+  background-color: var(--secondary-bg);
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+span {
+  color: var(--primary-color);
 }
 
 .nav {
@@ -93,7 +99,7 @@ body {
   z-index: -2;
 
   h1 {
-    font-size: 46px;
+    font-size: 2.5em;
     margin: -20px 0 20px;
   }
 
@@ -110,7 +116,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.65);
   z-index: -1;
 }
 
@@ -119,6 +125,11 @@ section {
 }
 
 .content {
+  h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+
   h2,
   h3 {
     font-size: 150%;
@@ -144,6 +155,38 @@ section {
 
     &:hover {
       color: #fff;
+    }
+  }
+
+  p {
+    color: #fff;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav {
+    .container {
+      display: block;
+      padding: 10px 0;
+
+      .logo {
+        text-align: center;
+        margin-bottom: 0.5em;
+
+        a {
+          color: var(--primary-color);
+        }
+      }
+    }
+
+    a.current {
+      color: #fff;
+    }
+  }
+
+  .nav.active {
+    a.current {
+      color: var(--primary-bg);
     }
   }
 }

@@ -1,7 +1,10 @@
 const Footer = () => {
   return (
     <section className="footer">
-      <a href="https://williamsl.tech">William S L Tech</a>
+      <div className="container">
+        <a href="https://williamsl.tech">William S L Tech</a>
+        <p>Copyright &copy; 2021. All Right Reserved</p>
+      </div>
     </section>
   );
 };
