@@ -1,10 +1,18 @@
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Content from "./components/Content";
+import Footer from "./components/Footer";
+
 import "./App.scss";
 
 function App() {
   return (
-    <div>
-      <h1>LANDING PAGE 3</h1>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+      <Content />
+      <Footer />
+    </>
   );
 }
 
